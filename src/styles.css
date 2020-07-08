@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.App {
+  font-family: Lato, sans-serif;
+  text-align: center;
+}
+
+.form-control {
+  width: 300px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-input {
+  width: 300px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 0.5px solid #b8b8b8;
+  /* background-color: #e8efff; */
+  outline-color: #35406e;
+}
+.form-label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #737373;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: top 0.1s;
+  transition: font-size 0.1s;
+}
+
+.form-label-active {
+  position: absolute;
+  left: 15px;
+  color: #35406e;
+  font-size: 0.8rem;
+  top: -6px;
+  background-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: top 0.1s;
+  transition: font-size 0.1s;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff6fb;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 490px;
+  width: 400px;
+  padding-top: 80px;
+  /* padding-bottom: 50px;   */
+  position: relative;
+}
+
+.card-header {
+  margin-bottom: 45px;
+  color: #35406e;
+}
+
+.btn-row {
+  display: flex;
+  position: absolute;
+  top: 400px;
+}
+
+.btn {
+  height: 45px;
+  width: 150px;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  transition: background-color 0.5s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #35406e;
+  color: #ffffff;
+}
+
+.row-footer {
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+}
+
+.row {
+  background-color: #35406e;
+  height: 10px;
+  width: 100%;
+  margin-top: auto;
+  border: 1px solid white;
+}
+
+.row-3-dark {
+  background-color: #35406e;
+  height: 10px;
+  width: 33.33%;
+  margin-top: auto;
+  border: 1px solid white;
+}
+
+.row-3-light {
+  background-color: #c4c5c9;
+  height: 10px;
+  width: 33.33%;
+  margin-top: auto;
+  border: 1px solid white;
+}
+
+.error {
+  width: 400px;
+  border-radius: 3px;
+  border: 1px solid #f0816a;
+  background-color: #f4a090;
+  padding: 5px;
+  position: fixed;
+  top: 10px;
+}
